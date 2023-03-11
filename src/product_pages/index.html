@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product Detail</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/product.js" type="module" defer></script>
+    <script src="../js/main.js" type="module" defer></script>
+    <script src="../js/product-pages-data.js" type="module" defer></script>
+    <script src="../js/image-carousel.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class = 'divider' id = 'main-header'></header>
+    <main class="divider">
+        <section class='breadcrumb-bar' id='breadcrumb-bar'></section>
+        <section class="product-detail">
+            <h3 id="product-brand-name"></h3>
+
+            <h2 class="divider" id="product-name-without-brand"></h2>
+            <div id="product-image" ></div>
+            <!-- <img id="product-image" class="divider" src="" alt="" /> -->
+
+            <p class="product-card__price">
+                <span id="product-suggested-retail-price"></span>
+                <span id="product-final-price"></span>
+                <span id="product-discount-percent"></span>
+            </p>
+
+            <div id="div-color-radio-buttons">
+            <!-- <input type="radio" name="color-selector" class="product_color" id="product-color-name"></p> -->
+            </div>
+            <p class="product__description" id="product-descriptionhtmlsimple"></p>
+
+            <div class="product-detail__add">
+                <button id="addToCart" data-id="" onclick="">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+<footer id = 'main-footer'></footer>
+</body>
+
+</html>

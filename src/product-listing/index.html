@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Home</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="../js/main.js" type="module" defer></script>
+    <script src="../js/product-listing.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class='divider' id='main-header'></header>
+    <main>
+        <section class='breadcrumb-bar' id='breadcrumb-bar'></section>
+        <section class="products">
+            <h2 id ='categoryName'>Top Products</h2>
+            <div class ='search'>
+                <input type="search" id="search-input" placeholder="Search.."/>
+            </div>
+            <div class="btn-group">
+                <p>sort</p>
+                <button id = 'sort-price'>Price</button>
+                <button id = 'sort-name'>Name</button>
+              </div>
+              <div id="quick-modal" class="modal">
+                <div class ="modal-content">
+                  <span class="close">X</span>
+                  <img id="modal-img" src="" alt="">
+                  <p id ="quick-name"></p>
+                  <p id="quick-text"></p>
+                </div>
+              </div>
+            <ul class="product-list">  
+            </ul>
+        </section>
+    </main>
+    <footer id='main-footer'></footer>
+</body>
+
+</html>
