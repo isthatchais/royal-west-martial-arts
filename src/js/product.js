@@ -4,10 +4,6 @@ import {
     makeHash
 } from './utils.mjs';
 import ExternalServices from './ExternalServices.mjs';
-import {
-    displaySuperscriptNumber
-} from './main.js';
-
 
 
 const category = new URLSearchParams(window.location.search).get('category');
@@ -64,9 +60,7 @@ function addProductToCart(product, colorCode, colorName, colorPicture) {
         currentCart = [cartProduct];
     }
     setLocalStorage('so-cart', currentCart);
-    displaySuperscriptNumber();
 }
-
 
 // add listener to Add to Cart button
 document
