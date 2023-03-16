@@ -3,9 +3,6 @@ import {
     setLocalStorage,
     setClick
 } from './utils.mjs';
-import {
-    displaySuperscriptNumber
-} from './main.js';
 
 function renderCartContents() {
     const cartItems = getLocalStorage('so-cart');
@@ -98,7 +95,6 @@ function changeCartItemQuantity(that, value) {
     setLocalStorage('so-cart', cartItems);
     renderCartContents();
     displayTotal();
-    displaySuperscriptNumber();
 }
 
 
@@ -110,7 +106,6 @@ function deleteCartItem() {
         setLocalStorage('so-cart', cartItems);
         renderCartContents();
         displayTotal();
-        displaySuperscriptNumber();
     }
 }
 
