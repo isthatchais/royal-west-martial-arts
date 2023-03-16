@@ -2,9 +2,6 @@ import {
     getLocalStorage,
     setLocalStorage,
 } from './utils.mjs';
-import {
-    displaySuperscriptNumber
-} from './main.js';
 
 import ExternalServices from './ExternalServices.mjs';
 
@@ -60,7 +57,6 @@ export default class CheckoutProcess {
                 message = await response.json().then();
                 //clear cart
                 setLocalStorage('so-cart', []);
-                displaySuperscriptNumber();
                 displayCategoryAlerts('checkout');
 
                 // clear form
