@@ -1,6 +1,5 @@
 import ExternalServices from './ExternalServices.mjs';
 import { createCrumbBar } from './breadcrumbBar.js';
-import imageCarousel from './image-carousel.js'
 
 const category = new URLSearchParams(window.location.search).get('category');
 const dataSource = new ExternalServices(category);
@@ -67,12 +66,12 @@ async function buildDetailsPage() {
         ((product.SuggestedRetailPrice - product.FinalPrice) /
       product.SuggestedRetailPrice) * 100
     ).toFixed(0)}% off`;
-    let children = document.getElementById('product-image').childElementCount;
-    if (children >= 3){
-        const carousel = new imageCarousel('#product-image');
-    } else {
-        imgCarCont.style.display = 'flex';
-    }
+    //let children = document.getElementById('product-image').childElementCount;
+    //if (children >= 3){
+    //const carousel = new imageCarousel('#product-image');
+    //} else {
+    //mgCarCont.style.display = 'flex';
+    //}
     
 }
 buildDetailsPage();
