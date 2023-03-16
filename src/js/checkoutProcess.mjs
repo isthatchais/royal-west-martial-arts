@@ -57,7 +57,6 @@ export default class CheckoutProcess {
                 message = await response.json().then();
                 //clear cart
                 setLocalStorage('so-cart', []);
-                displaySuperscriptNumber();
                 displayCategoryAlerts('checkout');
 
                 // clear form
