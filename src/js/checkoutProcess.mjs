@@ -2,9 +2,6 @@ import {
     getLocalStorage,
     setLocalStorage,
 } from './utils.mjs';
-import {
-    displaySuperscriptNumber
-} from './main.js';
 
 import ExternalServices from './ExternalServices.mjs';
 
