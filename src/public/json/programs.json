@@ -1,0 +1,32 @@
+[
+    {
+        "Id": "1",
+        "Name": "Taekwondo",
+        "Image": "/images/taekwondo.webp",
+        "Text": "<p>Taekwondo is a Korean martial art created by General Choi Hong Hi and others in the late 1940's. It was built on a foundation of ancient Korean styles dating back to the 14th century, with additional influences from Shotokan Karate and Chinese Wushu. Stylistically, it is very similar to Karate, with a special emphasis on fast, powerful kicking techniques.</p><p>At Royal west Martial Arts, we build our martial arts arsenal on a foundation of traditional Taekwondo. We practice the original Blue Cottage (ITF) style of Taekwondo, including the time-honored tenents of courtesy, integrity, perserverence, self-control, and indominable spirit.</p><a href='../product-listing/index.html?category=forms'><p>View Forms Here</p>"
+      },
+      {
+        "Id": "2",
+        "Name": "Jiu Jistu",
+        "Image": "/images/jiujitsu.webp",
+        "Text": "<p>Brazillian Jiu Jitsu is a system of grappling and groundfighting developed by Carlos and Helio Gracie, based on Koryu Jujutsu techniques originally used by early warring-states Japanese Samurai. Gracie Jiu Jitsu emphasizes command of the ground game through dominating position and submission techniques.</p>"
+      },
+      {
+        "Id": "3",
+        "Name": "Kobudo",
+        "Image": "/images/kobudo.webp",
+        "Text": "<p>Okinawan Kobudo (sometimes called Ryukyu Kobujutsu) is a name given to several styles of improvised weapons and hand-to-hand combat tactics practiced by the peasant class when the Japanese Empire annexed Okinawa in the early 1600's. The roots of these styles date back much earlier. While it is difficult to put names or dates on much of Kobudo's history, it was probably imported from China to the Ryukyu Kingdoms with Buddhism in the 8th Century. Kobudo's main weapons include the Bo, the Sai, the Nunchaku, and the Kama. Most modern Kobudo schools also incorporate Japanese Kenjutsu for mastery of the Samurai Katana.</p>"
+      },
+      {
+        "Id": "4",
+        "Name": "Judo",
+        "Image": "/images/judo.webp",
+        "Text": "<p> Kodokan Judo is a Japanese Sport similar to wrestling, developed by Kano Jigaro in the late 1800's. It emphasizes throwing (nagewaza), pinning (katamewaza), and submission (shimewaza and kansetsuwaza) techniques. It is based on Koryu Jujutsu, and shares a similar lineage to Brazilian Jiu Jitsu. There is significant overlap between Judo and Jiu Jitsu, and some see Jiu Jitsu as an alteration or expansion upon Judo's newaza (ground grame). In fact, Maeda Mitsuyo - who is sometimes considered the grandfather of Brazilian Jiu Jitsu - was a student under Kano at the Kodokan.</p><p>Judo is an invaluable addition to one's martal arts training. Nagewaza and katamewaza are great ways to immobilize and disable opponents. Ukemiwaza (falling) not only protects you during Judo training, but can save your life and prevent injury during self defense and more common real-world scenarios. </p>"
+      },
+      {
+        "Id": "5",
+        "Name": "Self Defence",
+        "Image": "/images/self-defence.webp",
+        "Text": "<p>At Royal West Martial Arts, we believe that a person's safety is their responsibility. We believe in teaching realistic techniques that will keep our students safe from those who would take advantage of them. Besides teaching strong, practical techniques, our self defense curriculum emphasizes assertiveness, conflict resolution, situational awareness, avoiding danger, and understanding of relevant legal and ethical questions regarding self defense. Our self-defense seminars are open to the public. Students are required to attend these seminars as a condition of rank advancement</p>"
+      }
+]

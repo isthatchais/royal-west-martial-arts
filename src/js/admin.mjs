@@ -1,11 +1,10 @@
-import ExternalServices from './ExternalServices.mjs';
-import Alert from './alerts.js';
+import ProductData from './productData.mjs';
 
 class Admin {
     constructor(outputSelector) {
         this.mainElement = document.querySelector(outputSelector);
         this.token = null;
-        this.services = new ExternalServices();
+        this.services = new ProductData();
     }
     async login(creds, next) {
         // I built the login method with a callback: next.
