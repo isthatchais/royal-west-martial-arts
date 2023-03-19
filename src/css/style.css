@@ -447,6 +447,9 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
+h3.larger{
+  font-size: 1.4em;
+}
 form fieldset {
   margin: 2rem 0;
   border: 1px solid #445BA9;
@@ -465,7 +468,6 @@ form label.top, form div {
   font-size: .8rem;
 }
 form label.top input, form label.top select {
-  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
@@ -639,10 +641,6 @@ table#order-summary td:last-child {
 
 }
 
-#email {
-  background-color: white;
-}
-
 #newsletter fieldset .top {
   color: #000;
   font-size: 1rem;
@@ -687,10 +685,14 @@ th{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .social{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-self: center;
+}
+#product-brand-name{
+  font-size: 2em;
 }
