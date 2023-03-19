@@ -63,7 +63,6 @@ function deleteCartItem() {
         setLocalStorage('so-cart', cartItems);
         renderCartContents();
         displayTotal();
-        displaySuperscriptNumber();
     }
 }
 
