@@ -10,7 +10,7 @@ async function buildDetailsPage() {
     const product = await dataSource.findProductById(productId);
     document.getElementById('addToCart').setAttribute('data-id', productId);
     document.getElementById('product-descriptionhtmlsimple').innerHTML =
-        product.Text;
+        product.Steps;
 
     document.getElementById('product-image').setAttribute('src', product.Image);
     document.getElementById('product-image').setAttribute('alt', `Image of ${product.Name}`);

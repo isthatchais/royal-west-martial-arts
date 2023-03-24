@@ -18,37 +18,28 @@ async function displayProductCards(productCategory){
     products.map((product) => {
         const li = document.createElement('li');
         li.setAttribute('class', 'product-card');
-        li.setAttribute('id', `product-${product.Id}`);
+        li.setAttribute('id', `form-${product.Id}`);
         const productCardDiv = document.createElement('div');
         productCardDiv.setAttribute('id', 'productCardDiv');
         const a = document.createElement('a');
-        a.setAttribute('href', `../product_pages/index.html?productId=${product.Id}&category=${productCategory}`)
+        a.setAttribute('href', `../form-pages/index.html?productId=${product.Id}&category=${productCategory}`)
         const img = document.createElement('img');
         img.setAttribute('src', product.Image);
         img.setAttribute('alt', `Image of ${product.Name}`);
         const h2 = document.createElement('h2');
         h2.setAttribute('class', 'card__brand');
-        h2.textContent = product.Name;
+        h2.textContent = product.KoreanName;
         const p = document.createElement('p');
-        const video = document.createElement('a');
-        a.setAttribute('href', product.Video)
-        video.setAttribute('class', 'product-card__price');
-        const suggestedRetailPrice = document.createElement('span');
-        suggestedRetailPrice.setAttribute('id','product-suggested-retail-price');
-        suggestedRetailPrice.textContent = `$${product.SuggestedRetailPrice}`;
-        const listedPrice = document.createElement('span');
-        listedPrice.setAttribute('id','product-final-price');
-        listedPrice.textContent = ` $${product.ListPrice}`;
+        const name = document.createElement('p');
+        name.setAttribute('id','product-final-price');
+        name.textContent = ` ${product.Name}`;
         const percentOff = document.createElement('span');
         percentOff.setAttribute('id','product-discount-percent');
-        percentOff.textContent = ` ${(
-            ((product.SuggestedRetailPrice - product.FinalPrice) /
-          product.SuggestedRetailPrice) * 100
-        ).toFixed(0)}% off`;
+        percentOff.textContent = ` ${product.Meaning}`
         const btndiv = document.createElement('div');
         btndiv.setAttribute('id', 'btndiv');
         btndiv.setAttribute('data-image', product.Image);
-        btndiv.setAttribute('data-description', product.DescriptionHtmlSimple);
+        btndiv.setAttribute('data-description', product.Steps);
         btndiv.setAttribute('data-name', product.Name);
         const quickView = document.createElement('button');
         quickView.textContent = 'Quick View';
@@ -60,9 +51,7 @@ async function displayProductCards(productCategory){
         a.appendChild(img);
         a.appendChild(h2);
         a.appendChild(p);
-        p.appendChild(suggestedRetailPrice)
-        p.appendChild(video)
-        p.appendChild(listedPrice)
+        p.appendChild(name)
         p.appendChild(percentOff)
         li.appendChild(btndiv)
         btndiv.appendChild(quickView)
@@ -100,7 +89,7 @@ function productSearch() {
     let searchInput = document.getElementById('search-input').value;
     //loop through all elements
     productList.forEach((product) => {
-        let id = 'product-' + product.Id;
+        let id = 'form-' + product.Id;
         document.getElementById(id).classList.remove('hide');
         //check if text does not include the search value
         if (!product.Name.toUpperCase().includes(searchInput.toUpperCase())) {

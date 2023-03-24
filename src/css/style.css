@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
   --font-body: montserrat;
-  --font-headline: montsettat;
   /* colors */
   --primary-color: #0000ff;
   --secondary-color: #e60000;
@@ -42,7 +43,8 @@ header {
   display: flex;
   font-size: 40px;
   justify-content: center;
-  font-family: var(--font-headline);
+  font-family: var(--font-body);
+  font-weight: bold;
 }
 
 .logo img {
@@ -249,7 +251,7 @@ button,
   justify-content: space-between;
   margin: 0.25em;
   padding: 0.5em;
-  border: 1px solid var(--light-grey);
+  border: 2px solid var(--secondary-color);
   max-width: 250px;
 }
 
@@ -290,15 +292,10 @@ button,
   width: 100%;
 }
 
-
-#product-suggested-retail-price {
-  text-decoration: line-through red;
-  color: red;
-}
-
 #product-final-price {
-  color: green;
+  color: var(--dark-grey);
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* Start cart list card styles */
@@ -485,7 +482,7 @@ form label.sbs {
 }
 form input.submitBtn {
   border: none;
-  background-color: #9C2C13;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -559,6 +556,7 @@ table#order-summary td:last-child {
 }
 #quick-view{
   font-size: var(--small-font);
+  background-color: var(--primary-color)
 }
 
 .modal {
