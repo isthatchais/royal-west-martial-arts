@@ -41,6 +41,8 @@ async function displayProductCards(productCategory){
         btndiv.setAttribute('data-image', product.Image);
         btndiv.setAttribute('data-description', product.Steps);
         btndiv.setAttribute('data-name', product.Name);
+        btndiv.setAttribute('data-start', product.Junbi);
+        btndiv.setAttribute('data-end', product.Paro);
         const quickView = document.createElement('button');
         quickView.textContent = 'Quick View';
         quickView.setAttribute('id','quick-view');
@@ -49,9 +51,9 @@ async function displayProductCards(productCategory){
         li.appendChild(productCardDiv);
         productCardDiv.appendChild(a);
         a.appendChild(img);
+        a.appendChild(name)
         a.appendChild(h2);
         a.appendChild(p);
-        p.appendChild(name)
         p.appendChild(percentOff)
         li.appendChild(btndiv)
         btndiv.appendChild(quickView)
@@ -65,7 +67,9 @@ async function displayProductCards(productCategory){
             modalImg.src = btndiv.getAttribute('data-image');
             modalImg.alt = btndiv.getAttribute('data-name');
             document.getElementById('quick-name').innerText = btndiv.getAttribute('data-name');
+            document.getElementById('quick-start').innerText = btndiv.getAttribute('data-start');
             document.getElementById('quick-text').innerHTML = btndiv.getAttribute('data-description');
+            document.getElementById('quick-end').innerText = btndiv.getAttribute('data-end');
             modal.style.display = 'block'
 
             
