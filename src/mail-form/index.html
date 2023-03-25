@@ -21,17 +21,20 @@
         <section class="product-detail">
             <h2 class="center divider">Contact Us</h2>
         </section>
-        <form action="mailto:isthatchais@gmail.com" method="get" enctype="text/plain">
+        <form action="https://formsubmit.co/isthatchais@gmail.com" method="POST" enctype="text/plain">
             <h3 class="center">Email</h3>
             <div class="center">
                 <fieldset>
                     <label class="top">Name*<input type="text" id='name' name="name" required></label>
                     <label class="top">Email*<input type="email" id='email' name="email" required></label>
                     <label class="top">Message*<input type="text" id='message' name="message" required></label>
+                    <input type="hidden" name="_next" value="/thanks/index.html">
+                    <input type="hidden" name="_subject" value="New website email!">
+                    <input type="hidden" name="_autoresponse" value="Thanks for interest in Royal West Martial Arts We've received your message">
                 </fieldset>
             </div>
             <div class="center">
-                <input type="button" value="Send" class="submitBtn">
+                <input type="submit" value="Send" class="submitBtn">
             </div>
         </form>
         <form id="newsletter">
