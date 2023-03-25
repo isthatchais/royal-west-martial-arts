@@ -20,6 +20,7 @@ export default defineConfig({
                 formPages: resolve(__dirname, 'src/form-pages/index.html'),
                 admin: resolve(__dirname, 'src/admin/index.html'),
                 mailForm: resolve(__dirname, 'src/mail-form/index.html'),
+                location: resolve(__dirname, 'src/location/index.html'),
             },
         },
     },

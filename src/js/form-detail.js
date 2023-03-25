@@ -1,3 +1,5 @@
+
+
 import ProductData from './productData.mjs';
 
 
@@ -11,6 +13,11 @@ async function buildDetailsPage() {
     document.getElementById('addToCart').setAttribute('data-id', productId);
     document.getElementById('product-descriptionhtmlsimple').innerHTML =
         product.Steps;
+    document.getElementById('korean-name').innerHTML = product.KoreanName;
+    document.getElementById('meaning').innerHTML = product.Meaning;
+    document.getElementById('video').setAttribute('href', product.Video);
+    document.getElementById('junbi').innerHTML = `Junbi: ${product.Junbi}`;
+    document.getElementById('paro').innerHTML = `Paro: ${product.Paro}`;
 
     document.getElementById('product-image').setAttribute('src', product.Image);
     document.getElementById('product-image').setAttribute('alt', `Image of ${product.Name}`);
