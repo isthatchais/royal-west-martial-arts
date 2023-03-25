@@ -384,7 +384,6 @@ button,
 .counter button:last-child{
   background-color: #9C2C13;
 }
-
 .checkout-button {
   text-decoration: none;
   background-color: #525b0f;
@@ -461,10 +460,10 @@ h3.larger{
   font-size: 1.4em;
 }
 form fieldset {
-  margin: 2rem 0;
+  max-width: 1000px;
+  margin: 15px auto;
   border: 1px solid #445BA9;
   border-radius: 10px;
-  padding: .5rem 2%;
 }
 form legend {
   color: #445BA9;
@@ -650,6 +649,11 @@ table#order-summary td:last-child {
   margin: 5px;
   text-align: center;
 
+}
+
+#newsletter fieldset a {
+  text-decoration: none;
+  color: black;
 }
 
 #newsletter fieldset .top {
