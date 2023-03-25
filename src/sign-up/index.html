@@ -22,13 +22,16 @@
         <section class="products">
             <h2 id="section-header" class="center">Sign Up</h2>
         </section>
-    <form id="checkout-form" action="https://formsubmit.co/isthatchais.com" method="POST" enctype="text/plain">
+    <form id="checkout-form" action="https://formsubmit.co/isthatchais@gmail.com" method="POST" enctype="text/plain">
         <div class="center">
             <fieldset>
                 <label class="top">Name*<input type="text" id='name' name="name" required></label>
                 <label class="top">Email*<input type="email" id='email' name="email" required></label>
                 <label class="top">Phone*<input type="text" id='phone' name="phone" pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required></label>
                 <label class="top">Location*<input type="text" id='location' name="location" required></label>
+                <input type="hidden" name="_next" value="/thanks/index.html">
+                <input type="hidden" name="_subject" value="New website signup!">
+                <input type="hidden" name="_autoresponse" value="Thanks for interest in Royal West Martial Arts We've received your sign up information">
             </fieldset>
         </div>
         <div class="center">
