@@ -19,24 +19,28 @@
     <header class = 'divider' id = 'main-header'></header>
     <main class="divider">
         <section class="product-detail">
-            <h2 class="center">Contact Us</h2>
-            <h2 class="divider" id="product-name-without-brand"></h2>
+            <h2 class="center divider">Contact Us</h2>
         </section>
         <form action="mailto:miskyukido@gmail.com" method="get" enctype="text/plain">
-            <legend>Email</legend>
-            <fieldset>
-                <label class="top">First Name*<input type="text" id='fname' name="fname" required></label>
-                <label class="top">Last Name*<input type="text" id='lname' name="lname" required></label>
-                <label class="top">Email*<input type="email" id='email' name="email" required></label>
-                <label class="top">Message*<input type="text" id='message' name="message" rows="5" required></label>
-            </fieldset>
+            <h3 class="center">Email</h3>
+            <div class="center">
+                <fieldset>
+                    <label class="top">Name*<input type="text" id='name' name="name" required></label>
+                    <label class="top">Email*<input type="email" id='email' name="email" required></label>
+                    <label class="top">Message*<input type="text" id='message' name="message" required></label>
+                </fieldset>
+            </div>
+            <div class="center">
                 <input type="button" value="Send" class="submitBtn">
+            </div>
         </form>
         <form id="newsletter">
-            <fieldset id="addToCart">
+            <fieldset>
+                <a href="/sign-up/index.html">
                 <h2>Sign Up Today</h2>
                 <p>get 2 classes free</p>
                 <input type="button" id='sign-up-button' value="Sign Up" class="signUpBtn">
+                </a>
             </fieldset>
         </form>
         <div class="product-detail">

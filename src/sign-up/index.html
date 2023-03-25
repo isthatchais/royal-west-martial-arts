@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Royal West Martial Arts | Sign Up</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class = 'divider' id = 'main-header'></header>
+
+    <main class="divider">
+        <div class="alert-list"></div>
+        <section class="products">
+            <h2 id="section-header" class="center">Sign Up</h2>
+        </section>
+    <form id="checkout-form" action="mailto:miskyukido@gmail.com" method="get" enctype="text/plain">
+        <div class="center">
+            <fieldset>
+                <label class="top">Name*<input type="text" id='name' name="name" required></label>
+                <label class="top">Email*<input type="email" id='email' name="email" required></label>
+                <label class="top">Phone*<input type="text" id='phone' name="phone" pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required></label>
+                <label class="top">Location*<input type="text" id='location' name="location" required></label>
+            </fieldset>
+        </div>
+        <div class="center">
+            <input type="button" id='submit-button' value="Sign Up" class="submitBtn">
+        </div>
+    </form>
+    <section class="product-detail">
+        <h2 class="center">Head School</h2>
+        <h3 class="center">Lindon, UT</h3>
+        <p class="mission">195 S State St.</p>
+        <p class="mission"> Lindon, UT 84042</p>
+        <h2 class="center">801-360-2078</h2>
+        <div class="divider"></div>
+    </section>
+    <section class="product-detail">
+        <h2 class="center">West Vally Location</h2>
+        <h3 class="center">West Valley, UT</h3>
+        <p class="mission">5415 W 3100 S</p>
+        <p class="mission">West Valley City, UT 84120</p>
+        <h2 class="center">801-955-4000</h2>
+    </section>
+    </main>
+    <footer id = 'main-footer'></footer>
+</body>
+
+</html>
