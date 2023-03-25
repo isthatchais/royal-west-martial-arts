@@ -21,6 +21,7 @@ export default defineConfig({
                 mailForm: resolve(__dirname, 'src/mail-form/index.html'),
                 location: resolve(__dirname, 'src/location/index.html'),
                 signUp: resolve(__dirname, 'src/sign-up/index.html'),
+                thanks: resolve(__dirname, 'src/thanks/index.html'),
             },
         },
     },
