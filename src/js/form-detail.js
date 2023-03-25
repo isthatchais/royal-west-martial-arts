@@ -10,7 +10,6 @@ async function buildDetailsPage() {
     const productId = new URLSearchParams(document.location.search).get('productId');
 
     const product = await dataSource.findProductById(productId);
-    document.getElementById('addToCart').setAttribute('data-id', productId);
     document.getElementById('product-descriptionhtmlsimple').innerHTML =
         product.Steps;
     document.getElementById('korean-name').innerHTML = product.KoreanName;
