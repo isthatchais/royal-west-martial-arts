@@ -596,7 +596,7 @@ table#order-summary td:last-child {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 40%;
+  max-width: 800px;
   text-align: center;
 }
 .modal-content img{
@@ -650,6 +650,11 @@ table#order-summary td:last-child {
   margin: 5px;
   text-align: center;
 
+}
+#newsletter fieldset p {
+  margin: 5px;
+  text-align: center;
+  font-size: large;
 }
 
 #newsletter fieldset a {
@@ -711,4 +716,9 @@ th{
 }
 #product-brand-name{
   font-size: 2em;
+}
+.text-decoration a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
 }
