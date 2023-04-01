@@ -13,6 +13,7 @@
 
     <script src="../js/main.js" type="module" defer></script>
     <script src="../js/product-pages-data.js" type="module" defer></script>
+    <script src="../js/redirect.js" type="module" defer></script>
 </head>
 
 <body>
@@ -25,38 +26,11 @@
             </div>
         </a>
         <section class="product-detail">
-            <h2 class="center divider">Contact Us</h2>
+            <h2 class="center divider">Email</h2>
         </section>
-        <form action="https://formsubmit.co/isthatchais@gmail.com" method="POST" enctype="text/plain">
-            <h3 class="center">Email</h3>
-            <div class="center">
-                <fieldset>
-                    <label class="top">Name*<input type="text" id='name' name="name" required></label>
-                    <label class="top">Email*<input type="email" id='email' name="email" required></label>
-                    <label class="top">Message*<input type="text" id='message' name="message" required></label>
-                    <input type="hidden" name="_next" value="/thanks/index.html">
-                    <input type="hidden" name="_subject" value="New website email!">
-                    <input type="hidden" name="_autoresponse" value="Thanks for interest in Royal West Martial Arts We've received your message">
-                </fieldset>
-            </div>
-            <div class="center">
-                <input type="submit" value="Send" class="submitBtn">
-            </div>
-        </form>
-        <form id="newsletter">
-            <fieldset>
-                <a href="/sign-up/index.html">
-                <h2>Sign Up Today</h2>
-                <p>get 2 classes free</p>
-                <input type="button" id='sign-up-button' value="Sign Up" class="signUpBtn">
-                </a>
-            </fieldset>
-        </form>
-        <div class="product-detail">
-            <a href="/location/index.html">
-                <p class="center">Locations</p>
-            </a>
-        </div>
+        <section class="center">
+            <iframe id="redirect" src="https://docs.google.com/forms/d/e/1FAIpQLSeZ0RQfZ35WhFH-JPmpa_wR8G6c0LECO5oS_N2l9wCo9Qioxg/viewform?embedded=true" width="640" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
     </main>
 <footer id = 'main-footer'></footer>
 </body>

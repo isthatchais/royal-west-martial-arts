@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <script src="../js/main.js" type="module" defer></script>
+    <script src="../js/redirect.js" type="module" defer></script>
 </head>
 
 <body>
@@ -25,37 +26,33 @@
             </div>
         </a>
         <section class="products">
-            <h2 id="section-header" class="center">Sign Up</h2>
+            <h2 id="section-header" class="center divider">Sign Up For More Information</h2>
         </section>
-    <form id="checkout-form" action="https://formsubmit.co/isthatchais@gmail.com" method="POST" enctype="text/plain">
-        <div class="center">
-            <fieldset>
-                <label class="top">Name*<input type="text" id='name' name="name" required></label>
-                <label class="top">Email*<input type="email" id='email' name="email" required></label>
-                <label class="top">Phone*<input type="text" id='phone' name="phone" pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required></label>
-                <label class="top">Location*<input type="text" id='location' name="location" required></label>
-                <input type="hidden" name="_next" value="/thanks/index.html">
-                <input type="hidden" name="_subject" value="New website signup!">
-                <input type="hidden" name="_autoresponse" value="Thanks for interest in Royal West Martial Arts We've received your sign up information">
-            </fieldset>
-        </div>
-        <div class="center">
-            <input type="submit" id='submit-button' value="Sign Up" class="submitBtn">
-        </div>
-    </form>
-    <section class="product-detail">
+        <section class="center divider">
+            <iframe id="redirect" src="https://docs.google.com/forms/d/e/1FAIpQLSeqzFw9w-EDLxOVVsKrl3UWGUtjm5NYoGGm2CIk6gLObjvDUA/viewform?embedded=true" width="640" height="1150" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+        
+        <section class="text-decoration">
         <h2 class="center">Head School</h2>
         <h3 class="center">Lindon, UT</h3>
+        <a href="https://goo.gl/maps/uVcUvEB3kHy4G65x9" target="_blank" rel="noopener noreferrer">
+        <section>
         <p class="mission">195 S State St.</p>
         <p class="mission"> Lindon, UT 84042</p>
+        </section>
+        </a>
         <h2 class="center">801-360-2078</h2>
         <div class="divider"></div>
     </section>
-    <section class="product-detail">
+    
+    
+    <section class="text-decoration">
         <h2 class="center">West Vally Location</h2>
         <h3 class="center">West Valley, UT</h3>
+        <a href="https://goo.gl/maps/P3H8cG99Vjjq2dcP8" target="_blank" rel="noopener noreferrer">
         <p class="mission">5415 W 3100 S</p>
         <p class="mission">West Valley City, UT 84120</p>
+        </a>
         <h2 class="center">801-955-4000</h2>
     </section>
     </main>
